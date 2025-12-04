@@ -57,3 +57,42 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Weather App Feature
+
+This application includes a simple weather app feature that becomes available after user login.
+
+### Features
+
+- Search weather by city name
+- Display current temperature, weather description, and weather icon
+- Show additional details: feels like temperature, humidity, and wind speed
+- Responsive design with Tailwind CSS
+- Weather tips based on current conditions
+- Quick search buttons for popular cities
+
+### Setup
+
+1. **Get OpenWeatherMap API Key** (optional):
+   - Register at [OpenWeatherMap](https://openweathermap.org/api)
+   - Get your free API key
+   - Add it to your `.env` file: `OPENWEATHER_API_KEY=your_api_key_here`
+
+2. **Without API Key**:
+   - The app will work with demo data when API key is not available
+   - Perfect for testing and development
+
+### Usage
+
+1. Login to your account
+2. Navigate to "Weather" in the main menu
+3. Enter a city name (e.g., Jakarta, London, Tokyo)
+4. View the weather information with beautiful Tailwind CSS styling
+
+### Technical Details
+
+- **Backend**: Laravel Action-based architecture
+- **Frontend**: Vue.js with Inertia.js
+- **Styling**: Tailwind CSS
+- **API**: OpenWeatherMap API with fallback to demo data
+- **Authentication**: Required (middleware protected routes)
